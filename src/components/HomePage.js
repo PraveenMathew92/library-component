@@ -2,7 +2,8 @@ import React from 'react';
 
 const HomePage = () => (
     <div>
-        Search Box
+        <input placeholder="Book Name"></input>
+        <button type="submit">SEARCH</button>
     </div>
 );
 
