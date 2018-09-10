@@ -1,6 +1,8 @@
 .leftNav {
     font-size: 30px;
     width: 10%;
+    margin-right: 15px;
+    float: left;
     border-right: solid black 1px;
 }
 
