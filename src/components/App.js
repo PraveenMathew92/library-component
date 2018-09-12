@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import LeftNav from './LeftNav';
 import TitleBar from './TitleBar';
-import HomePage from './HomePage';
 
 class App extends Component {
   render() {
@@ -9,7 +8,7 @@ class App extends Component {
       <div className="App">
         <TitleBar />
         <LeftNav />
-        <HomePage />
+        {this.props.children}
       </div>
     );
   };
