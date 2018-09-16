@@ -24,11 +24,13 @@ module.exports = {
     },
     output:{
         filename: 'transformed.js',
-        path: __dirname + '/build'
+        path: __dirname + '/build',
+        publicPath: "/"
     },
     devServer:{
         port: 4000,
-        publicPath: 'http://localhost:4000'
+        publicPath: '/',
+        historyApiFallback: true
     },
     plugins: [HTMLWebpackPluginConfig]
 };
