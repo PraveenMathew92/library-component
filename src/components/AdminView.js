@@ -2,29 +2,29 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const AdminView = () => (
-    <Tabs>
-      <TabList>
-        <Tab>ADD READER</Tab>
-        <Tab>ADD BOOK</Tab>
-      </TabList>
+    <div>
+      <Tabs>
+        <TabList>
+         <Tab>ADD READER</Tab>
+         <Tab>ADD BOOK</Tab>
+          </TabList>
 
-      <TabPanel>
-          <div>
-              <input> NAME </input>
-              <input> ADDRESS </input>
-              <input type="submit"> ADD </input>
-          </div>
-      </TabPanel>
-      <TabPanel>
-          <div>
-              <input> TITLE </input>
-              <input> ISBN </input>
-              <input> AUTHOR </input>
-              <input> No of Copies </input>
-              <input type="submit"> ADD </input>
-          </div>
-      </TabPanel>
-    </Tabs>
+        <TabPanel>
+            <input placeholder="Name"></input> <br />
+            <input placeholder="Address"></input> <br />
+            <button type="submit"> ADD </button> <br />
+          </TabPanel>
+         <TabPanel>
+             <div>
+             <input placeholder="Title"></input> <br />
+            <input placeholder="Author"></input> <br />
+            <input placeholder="ISBN"></input> <br />
+            <input placeholder="No of Copies"></input> <br />
+            <button type="submit"> ADD </button> <br />
+            </div>
+       </TabPanel>
+      </Tabs>
+    </div>
   );
 
   export default AdminView;
